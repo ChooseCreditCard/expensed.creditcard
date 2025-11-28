@@ -2,48 +2,241 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Should not index -->
-  <meta name="robots" content="noindex,follow" />
+  <title>Expensed.Creditcard – How Card-Based Expenses Work</title>
+  <meta name="description" content="Understand how business card expenses are handled: transactions, receipt capture, approvals, policies and accounting integration. Neutral, educational overview of card-based expense management." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://expensed.creditcard/" />
 
-  <!-- Instant redirect -->
-  <meta http-equiv="refresh"
-        content="0; url=https://choose.creditcard/?utm_source=expensed.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Expensed.Creditcard – Card Expenses & Expense Management Explained" />
+  <meta property="og:description" content="Learn how card transactions become expenses: coding, approvals, policies, reimbursement decisions and accounting integration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://expensed.creditcard/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- GA tracking -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Expensed.Creditcard – Card Expenses & Expense Management Explained" />
+  <meta name="twitter:description" content="Neutral explanation of how business credit-card spend flows through expense reports, approvals and accounting systems." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-64FE63JQ3H', {
-      'page_title': 'Redirect expensed.creditcard',
-      'page_path': '/redirect/expensed.creditcard'
-    });
+    gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #020617;
-      color: #64748b;
-      font-family: system-ui, sans-serif;
-    }
-    a {
-      color: #38bdf8;
-    }
-  </style>
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  Redirecting to
-  <a href="https://choose.creditcard/?utm_source=expensed.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection">
-    Choose.Creditcard
-  </a>…
+<body class="bg-slate-950 text-slate-100">
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">Expensed.Creditcard</div>
+          <div class="brand-subtitle">Business Card Expenses Explained</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      Expensed.Creditcard
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Card Transactions Become Business Expenses</h1>
+        <p class="hero-lead">
+          When employees pay with a business card, each transaction must be coded, documented and approved. This page explains card-based expenses, policies and integrations in neutral, documentation-style language.
+        </p>
+        <a class="cta" href="https://choose.creditcard/business/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the Business &amp; Freelance hub
+        </a>
+      </div>
+    </section>
+
+    <!-- Content sections -->
+    <section id="overview" class="section">
+      <h2>What Does It Mean When Something Is “Expensed”?</h2>
+      <p>When a purchase is “expensed”, it means the cost is recorded as a business expense rather than as personal spending. For card payments, this involves linking each transaction to a project, cost centre, department or policy category.</p>
+      <p>In a card-based setup, the employee uses a company card and the organization pays the statement. The goal is to capture enough information around each transaction to satisfy accounting, tax and internal policy requirements.</p>
+    </section>
+
+    <section id="mechanics" class="section">
+      <h2>The Flow From Card Swipe to Approved Expense</h2>
+      <p>Most business expense processes follow the same basic pattern, regardless of which card issuer or software provider is involved.</p>
+      <ul class="list">
+        <li><strong>1. Transaction</strong> – the employee pays with a business or B2B card.</li>
+        <li><strong>2. Import</strong> – transactions flow into an expense tool or banking portal.</li>
+        <li><strong>3. Coding</strong> – the transaction is assigned to a category, project or cost centre.</li>
+        <li><strong>4. Documentation</strong> – receipts are attached, notes are added where necessary.</li>
+        <li><strong>5. Approval</strong> – a manager or finance role reviews and approves or rejects.</li>
+        <li><strong>6. Posting</strong> – the approved expense is exported or synced to the accounting system.</li>
+      </ul>
+      <p>Some steps can be automated, but they still rely on clear rules: which expenses are allowed, what documentation is required and who signs off for which amounts.</p>
+    </section>
+
+    <section class="section">
+      <h2>Receipts, Documentation and Audit Trails</h2>
+      <p>Regulators and auditors expect companies to be able to show what was purchased, when, for which business purpose and under which policy. Card statements alone rarely provide enough detail.</p>
+      <p>Modern expense tools encourage employees to capture receipts via mobile apps, email forwarding or direct upload. Many systems extract merchant, amount, date and tax details automatically, but the employee or approver still needs to confirm that the purchase is legitimate and properly categorized.</p>
+    </section>
+
+    <section class="section">
+      <h2>Policies, Limits and Exceptions</h2>
+      <p>Even with detailed data, card-based expense management depends on clear policies. These define which expenses are allowed, what daily or trip-based limits apply and how exceptions should be handled.</p>
+      <p>Some organizations rely heavily on card controls (for example blocking certain merchant categories). Others allow wider card usage but apply stricter review at the expense-approval stage. The right balance depends on size, risk tolerance and regulatory environment.</p>
+    </section>
+
+    <section class="section">
+      <h2>Reimbursements vs. Company Card Spend</h2>
+      <p>Not all expenses are paid directly with a company card. In some cases, employees pay out of pocket and request reimbursement later, while in others the card handles almost all eligible spend.</p>
+      <p>From an expense-management perspective, the same questions arise: is the expense allowed under policy, is documentation complete, and has the right approver signed off? The main difference is whether the company is paying a card statement or reimbursing an individual.</p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Compare Expense-Related Card Features</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data Export &amp; Integrations</td>
+              <td>CSV, API, direct links to accounting or ERP</td>
+              <td>Determines how easily expenses flow into the general ledger.</td>
+            </tr>
+            <tr>
+              <td>Receipt Capture</td>
+              <td>Mobile apps, email-in, OCR support</td>
+              <td>Impacts how often receipts go missing and how much manual work is needed.</td>
+            </tr>
+            <tr>
+              <td>Approval Workflows</td>
+              <td>Multi-level approvals, delegation, routing rules</td>
+              <td>Helps align expense sign-off with internal authorization structures.</td>
+            </tr>
+            <tr>
+              <td>Card &amp; Policy Controls</td>
+              <td>Category blocks, per-transaction limits, region rules</td>
+              <td>Reduces the number of out-of-policy expenses at the source.</td>
+            </tr>
+            <tr>
+              <td>Reporting &amp; Audit Trails</td>
+              <td>Full history, comments, policy flags</td>
+              <td>Supports internal reviews and external audits.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        For product-by-product comparisons of business and B2B cards, visit
+        <a href="https://choose.creditcard/business/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Business &amp; Expense Microsites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://b2b.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_b2b">
+          <h3>B2B.Creditcard</h3>
+          <p>How business and B2B credit-card programs are structured.</p>
+        </a>
+        <a class="cluster-card" href="https://banked.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_banked">
+          <h3>Banked.Creditcard</h3>
+          <p>Links between business cards, bank accounts and settlements.</p>
+        </a>
+        <a class="cluster-card" href="https://invest.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_invest">
+          <h3>Invest.Creditcard</h3>
+          <p>Card usage in the context of cash flow and working capital.</p>
+        </a>
+        <a class="cluster-card" href="https://directory.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_directory">
+          <h3>Directory.Creditcard</h3>
+          <p>Index of business, expense and structural domains.</p>
+        </a>
+        <a class="cluster-card" href="https://hub.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_hub">
+          <h3>Hub.Creditcard</h3>
+          <p>How The CreditCard Collection is organized as hubs and spokes.</p>
+        </a>
+        <a class="cluster-card" href="https://comparecard.creditcard/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=cluster_comparecard">
+          <h3>CompareCard.Creditcard</h3>
+          <p>Neutral comparison structures for different card products.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        Expensed.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a single payment or process concept in clear language and then connects you to independent comparison tools.
+      </p>
+      <p class="small">
+        We do not issue cards. We summarize documentation, highlight process trade-offs and link to external providers where you can read full terms yourself.
+      </p>
+      <p class="small">
+        This site is informational only and does not provide financial, investment, tax or accounting advice. Always review official documentation and consider seeking independent professional advice if needed.
+      </p>
+
+      <!-- Business hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        This site connects to the
+        <a href="https://choose.creditcard/business/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=hub_business"
+           class="font-medium hover:text-slate-900">
+          Business &amp; Freelance Cards hub
+        </a>
+        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>,
+        focusing on company, freelancer and side-hustle use-cases.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to Explore Business Card Expense Options?</h2>
+      <p class="small">
+        Use Expensed.Creditcard to understand how card-based expenses flow through policies and systems — then visit the main Business &amp; Freelance hub to review concrete products and their documentation.
+      </p>
+      <a class="cta" href="https://choose.creditcard/business/?utm_source=expensed.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Business &amp; Freelance hub
+      </a>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
+  </footer>
 </body>
 </html>
-
